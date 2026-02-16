@@ -1,0 +1,77 @@
+.collection-header h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+.collection-header h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.collection-controls {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.search-box,.genre-fiter {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid rgb(108, 99, 255, 0.3);
+    background: rgb(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 1rem;
+}
+.search-box {
+    flex: 1;
+    min-width: 250px;
+}
+.search-box:focus {
+    outline: none ;
+    border-color: #6c63ff;
+}
+.genre-filter {
+    min-width: 150px;
+    cursor: pointer;
+}
+.genre-filter option {
+    background: #1a1a2e;
+    color: #fff;
+}
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgb(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgb(108, 99 ,255, 0.2);
+}
+.empty-state p {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.empty-message {
+    color: #ccc;
+    text-align: center;
+    padding: 2rem;
+    grid-column: 1 / -1;
+}
+.empty-message a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+.empty-message a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    .collection-controls {
+        flex-direction: column;
+    }
+    .search-box,.genre-filter {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .collection-header h2 {
+        font-size: 1.5rem;
+    }
+}

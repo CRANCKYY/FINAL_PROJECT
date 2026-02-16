@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRANCKY flix - My Collection</title>
+        <meta name="description" content="Browse your movie collection">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/collection.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" 
+        rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>CRANCKY flix</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="collection.html" class="active">Collection</a></li>
+                    <li><a href="add-movie.html">Add Movie</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="collection-header">
+                <h2>My Movie Collection</h2>
+                <div class="collection-controls">
+                    <input type="text" id="search-input" placeholder="Searchmovies..." class="search-box">
+                    <select id="genre-filter" class="genre-filter">
+                        <option value="all">All Genres</option>
+                        <option value="Action">Action</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Documentary">Documentary</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="movies-container">
+                <div id="movies-grid" class="movies-grid">
+                </div>
+                <div id="empty-state" class="empty-stste" style="display: none;">
+                    <p>No movies in your collectionv yet.</p>
+                    <a href="add-movie.html" class="btn btn-primary">Add Your First Movie</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 CRANCKY flix. All rights reserved.</p>
+        </footer>
+
+        <script src="js/main.js"></script>
+        <script src="js/collection.js"></script>
+    </body>
+</html>    
